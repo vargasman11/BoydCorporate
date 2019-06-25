@@ -150,8 +150,35 @@
       width: 60%;
       float: left; } }
 
-#carousel .carousel-inner img {
-  z-index: 1 !important; }
+#carousel {
+  position: relative; }
+  #carousel .carousel-indicators {
+    position: absolute;
+    right: -80% !important;
+    bottom: 15% !important;
+    margin: 0; }
+    #carousel .carousel-indicators li {
+      border-radius: 50%;
+      height: 10px;
+      width: 10px; }
+  #carousel .carousel-inner .carousel-item {
+    position: relative; }
+    #carousel .carousel-inner .carousel-item img {
+      z-index: 100; }
+    #carousel .carousel-inner .carousel-item .slide-text {
+      position: absolute;
+      z-index: 1000;
+      top: 10%;
+      right: 15%; }
+      #carousel .carousel-inner .carousel-item .slide-text h1 {
+        color: #ffffff; }
+      #carousel .carousel-inner .carousel-item .slide-text p img {
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+        padding: 30px; }
+      #carousel .carousel-inner .carousel-item .slide-text p span {
+        margin-left: 15px;
+        color: #ffffff; }
 
 #people-container {
   background-image: url("../Assests/backgrounds/paint-swash-bg.png");
@@ -160,7 +187,7 @@
   padding: 7% 0px 5% 0px;
   margin-top: -5%;
   z-index: 1000;
-  position: absolute;
+  position: relative;
   width: 100%; }
 
 body {
@@ -168,6 +195,5 @@ body {
   position: relative; }
 
 #main-container {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding: 0 !important;
   position: relative; }

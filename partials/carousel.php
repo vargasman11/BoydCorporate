@@ -9,6 +9,12 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="Assests/headers/header-1.png" alt="" class="d-block w-100" id="slide1">
+            <div class="slide-text" id="slide-one">
+                <h1>Work Hard <br>
+                    Work Smart <br>
+                    Enjoy Life.</h1>
+                    <p><img src="Assests/icons/Play Arrow.png" alt=""><span>Watch video</span></p>
+            </div>
         </div>
         <div class="carousel-item">
             <img src="Assests/headers/header-2.png" alt="" class="d-block w-100" id="slide2">
