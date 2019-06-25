@@ -14,7 +14,7 @@
             <!-- </div> -->
         </nav>
 
-        <div class="dropDownSection" id="dropDownSection" style="display:block">
+        <div class="dropDownSection" id="dropDownSection" style="display:none">
             <div class="" id="leftSection">
                 <div id="left-half">
                     <ul>

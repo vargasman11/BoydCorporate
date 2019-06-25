@@ -21,5 +21,5 @@
     <title>Boyd Bros</title>
 </head>
 
-<body>
+<body >
 <div class="container bg-light" id="main-container">

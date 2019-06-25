@@ -1,5 +1,6 @@
 
 // Shows the main menu
+// The dispaly css setting is inline html not in the css file
 
 function showMenu() {    
     // select the menu

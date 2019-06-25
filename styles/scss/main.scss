@@ -1,11 +1,16 @@
 @import 'variables';
 @import 'menu';
+@import 'carousel';
+@import 'people';
 
 body{
     background-color: rgb(217, 221, 217);
+    position: relative;
+    // background-color: red !important;
 }
 
 #main-container{
     padding-right: 0 !important;
     padding-left: 0 !important;
+    position: relative;
 }

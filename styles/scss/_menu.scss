@@ -37,7 +37,7 @@
     transform: translateX(-50%);
     width: 80%;
     min-height: 400px;
-
+    
     #leftSection {
         width: 50%;
         float: left;
@@ -96,8 +96,9 @@
                         }
                     }
                 }
-            }            
+            }
         }
+
         #left-half {
             width: 50%;
             float: left;
@@ -109,58 +110,58 @@
         }
     }
 
-        // right half of the dropdown menu
-        #rightSection {
-            width: 40%;
-            float: right;
-            padding-top: 20px;
-            margin-top: 30px;
-            padding-left: 5%;
+    // right half of the dropdown menu
+    #rightSection {
+        width: 40%;
+        float: right;
+        padding-top: 20px;
+        margin-top: 30px;
+        padding-left: 5%;
 
-            .search-section {
-                form {
-                    .dropDownSearch {
+        .search-section {
+            form {
+                .dropDownSearch {
+                    width: 80%;
+                    border-bottom: 3px $gray solid;
+                    padding-bottom: 5px;
+
+                    input {
+                        border: none !important;
                         width: 80%;
-                        border-bottom: 3px $gray solid;
-                        padding-bottom: 5px;
-
-                        input {
-                            border: none !important;
-                            width: 80%;
-                            background-color: inherit;
-                            color: $red;
-                            font-weight: 500;
-                            font-size: 1.2em;
-                        }
-
-                        input:focus {
-                            outline: 0;
-                        }
+                        background-color: inherit;
+                        color: $red;
+                        font-weight: 500;
+                        font-size: 1.2em;
                     }
-                }
-            }
 
-            .social-links {
-                ul {
-                    padding: 20px 0px;
-                    margin-top: 20px;
-
-                    li {
-                        display: inline;
-                        margin: 0px 5%;
-
-                        i {
-                            color: $gray;
-                            font-size: 1.5em;
-                        }
-
-                        i:hover {
-                            color: $red;
-                        }
+                    input:focus {
+                        outline: 0;
                     }
                 }
             }
         }
+
+        .social-links {
+            ul {
+                padding: 20px 0px;
+                margin-top: 20px;
+
+                li {
+                    display: inline;
+                    margin: 0px 5%;
+
+                    i {
+                        color: $gray;
+                        font-size: 1.5em;
+                    }
+
+                    i:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // javascript envoked classes
@@ -180,3 +181,94 @@
 
 // // Extra large devices (large desktops, 1200px and up)
 // // @media (min-width: 1200px) { ... }
+
+// Mobile Phone
+@media (max-width: 767px) {
+    #nav-container {
+        height: 100px;
+
+        nav {
+            #nav-logo {
+                margin-left: 15px;
+                height: 50px;
+                margin-top: 10px;
+            }
+
+            .hamburger {
+                padding: 0;
+                margin-top: -10px;
+            }
+        }
+    }
+
+    // drop down section
+    .dropDownSection {
+        width: 100%;
+
+        #leftSection {
+            width: 100%;
+            float: left;
+
+            ul {
+                padding-left: 15px;
+
+                li {
+
+                    button,
+                    a {
+                        font-size: 14px;
+                        text-align: left;
+                    }
+
+                    .btn {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        // right half of the dropdown menu
+        #rightSection {
+            width: 100%;
+            float: left;
+            padding-left: 12.5%;
+
+            .search-section {
+                form {
+                    .dropDownSearch {
+                        width: 80%;
+                        border-bottom: 3px $gray solid;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+
+            .social-links {
+                ul {
+                    padding: 20px 0px;
+                    margin-top: 20px;
+
+                    li {
+                        display: inline;
+                        margin: 0px 5%;
+                        padding-left: 8%;
+                    }
+                }
+            }
+        }
+    }
+
+    // end mobile
+}
+
+// Tablets
+@media (min-width: 768px) and (max-width: 992px){
+    .dropDownSection {       
+        width: 100%;    
+        #leftSection {
+            width: 60%;
+            float: left;                       
+        }    
+    }
+// end tablets    
+}

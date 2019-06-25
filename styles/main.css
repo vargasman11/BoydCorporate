@@ -104,9 +104,70 @@
 .red {
   background-color: #c30300 !important; }
 
+@media (max-width: 767px) {
+  #nav-container {
+    height: 100px; }
+    #nav-container nav #nav-logo {
+      margin-left: 15px;
+      height: 50px;
+      margin-top: 10px; }
+    #nav-container nav .hamburger {
+      padding: 0;
+      margin-top: -10px; }
+  .dropDownSection {
+    width: 100%; }
+    .dropDownSection #leftSection {
+      width: 100%;
+      float: left; }
+      .dropDownSection #leftSection ul {
+        padding-left: 15px; }
+        .dropDownSection #leftSection ul li button,
+        .dropDownSection #leftSection ul li a {
+          font-size: 14px;
+          text-align: left; }
+        .dropDownSection #leftSection ul li .btn {
+          width: 90%; }
+    .dropDownSection #rightSection {
+      width: 100%;
+      float: left;
+      padding-left: 12.5%; }
+      .dropDownSection #rightSection .search-section form .dropDownSearch {
+        width: 80%;
+        border-bottom: 3px #545454 solid;
+        padding-bottom: 5px; }
+      .dropDownSection #rightSection .social-links ul {
+        padding: 20px 0px;
+        margin-top: 20px; }
+        .dropDownSection #rightSection .social-links ul li {
+          display: inline;
+          margin: 0px 5%;
+          padding-left: 8%; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .dropDownSection {
+    width: 100%; }
+    .dropDownSection #leftSection {
+      width: 60%;
+      float: left; } }
+
+#carousel .carousel-inner img {
+  z-index: 1 !important; }
+
+#people-container {
+  background-image: url("../Assests/backgrounds/paint-swash-bg.png");
+  background-size: cover;
+  min-height: 400px;
+  padding: 7% 0px 5% 0px;
+  margin-top: -5%;
+  z-index: 1000;
+  position: absolute;
+  width: 100%; }
+
 body {
-  background-color: #d9ddd9; }
+  background-color: #d9ddd9;
+  position: relative; }
 
 #main-container {
   padding-right: 0 !important;
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+  position: relative; }
