@@ -4,14 +4,14 @@
     <div class="container" id="nav-container">
         <nav>
             <img src="Assests/logos/boyd-logo-1.png" id="nav-logo">
-            <div class="hamburger">
+            <!-- <div class="hamburger"> -->
             <!-- <button id="menu-btn" onclick="showMenu()"><i class="fa fa-bars"></i></button> -->
             <button id="menu-btn" class="hamburger hamburger--spin" type="button" onclick="showMenu()">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            </div>
+            <!-- </div> -->
         </nav>
 
         <div class="dropDownSection" id="dropDownSection" style="display:block">
