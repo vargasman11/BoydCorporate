@@ -1,0 +1,112 @@
+#nav-container {
+  height: 120px;
+  border-bottom: 20px solid #c30300;
+  padding: 10px 0;
+  position: relative; }
+  #nav-container nav {
+    display: inline; }
+    #nav-container nav #nav-logo {
+      margin-left: 15px; }
+    #nav-container nav .hamburger {
+      font-size: 3rem;
+      float: right;
+      margin-right: 20px; }
+      #nav-container nav .hamburger #menu-btn {
+        border: none;
+        background-color: inherit; }
+        #nav-container nav .hamburger #menu-btn .fa-bars {
+          color: #545454; }
+
+.dropDownSection {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  min-height: 400px; }
+  .dropDownSection #leftSection {
+    width: 50%;
+    float: left; }
+    .dropDownSection #leftSection ul {
+      list-style: none; }
+      .dropDownSection #leftSection ul li {
+        margin: 10px 0px;
+        text-align: left; }
+        .dropDownSection #leftSection ul li button,
+        .dropDownSection #leftSection ul li a {
+          color: #fff;
+          width: 100%; }
+        .dropDownSection #leftSection ul li .btn {
+          position: relative;
+          background-color: #545454;
+          border-radius: 0px !important; }
+          .dropDownSection #leftSection ul li .btn i {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            padding-left: 85%;
+            padding-top: 4%;
+            z-index: 100; }
+        .dropDownSection #leftSection ul li .btn:focus {
+          outline: 0; }
+        .dropDownSection #leftSection ul li .sub-menu {
+          background-color: #f7f7f7;
+          padding-left: 20px; }
+          .dropDownSection #leftSection ul li .sub-menu li {
+            background-color: transparent; }
+            .dropDownSection #leftSection ul li .sub-menu li a {
+              color: #545454;
+              background-color: transparent;
+              font-weight: 500; }
+            .dropDownSection #leftSection ul li .sub-menu li a:hover {
+              color: #c30300;
+              text-decoration: none; }
+    .dropDownSection #leftSection #left-half {
+      width: 50%;
+      float: left; }
+    .dropDownSection #leftSection #right-half {
+      width: 50%;
+      float: right; }
+  .dropDownSection #rightSection {
+    width: 40%;
+    float: right;
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-left: 5%; }
+    .dropDownSection #rightSection .search-section form .dropDownSearch {
+      width: 80%;
+      border-bottom: 3px #545454 solid;
+      padding-bottom: 5px; }
+      .dropDownSection #rightSection .search-section form .dropDownSearch input {
+        border: none !important;
+        width: 80%;
+        background-color: inherit;
+        color: #c30300;
+        font-weight: 500;
+        font-size: 1.2em; }
+      .dropDownSection #rightSection .search-section form .dropDownSearch input:focus {
+        outline: 0; }
+    .dropDownSection #rightSection .social-links ul {
+      padding: 20px 0px;
+      margin-top: 20px; }
+      .dropDownSection #rightSection .social-links ul li {
+        display: inline;
+        margin: 0px 5%; }
+        .dropDownSection #rightSection .social-links ul li i {
+          color: #545454;
+          font-size: 1.5em; }
+        .dropDownSection #rightSection .social-links ul li i:hover {
+          color: #c30300; }
+
+.red {
+  background-color: #c30300 !important; }
+
+body {
+  background-color: #d9ddd9; }
+
+#main-container {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
