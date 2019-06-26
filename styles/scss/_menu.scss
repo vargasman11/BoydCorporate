@@ -32,7 +32,7 @@
 .dropDownSection {
     background-color: $white-transparent;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -204,6 +204,8 @@
     // drop down section
     .dropDownSection {
         width: 100%;
+        min-height: 100vh;
+        padding-top: 10vh;
 
         #leftSection {
             width: 100%;

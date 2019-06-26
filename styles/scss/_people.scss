@@ -1,11 +1,79 @@
-#people-container{
+#people-container {
     background-image: url("../Assests/backgrounds/paint-swash-bg.png");
     background-size: cover;
-    min-height: 400px;    
+    min-height: 400px;
     padding: 7% 0px 5% 0px;
     margin-top: -5%;
-    z-index: 1000;
+    z-index: 100;
     position: relative;
     width: 100%;
-    
+    .card {
+        width: 18rem;
+        background-size: cover;
+        height: 350px;
+        border: 0px !important;
+        border-radius: 0px !important;        
+        .card-body {
+            position: absolute;
+            bottom: 0;
+            background: rgba(25, 25, 25, 0.6);
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            p {
+                color: $white;
+                font-size: 1.75em;
+                margin-top: -15px;
+                text-align: center;
+            }
+            a {
+                color: $white;
+                text-align: center;
+                img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    #left-card {
+        background-image: url("../Assests/people/lady-left.png");
+    }
+    #middle-card {
+        background-image: url("../Assests/people/man-middle.png");
+    }
+    #right-card {
+        background-image: url("../Assests/people/man-right.png");
+    }
+}
+
+//     // Media Queries
+//     // Small devices (landscape phones, 576px and up)
+// // @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// // @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// // @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// // @media (min-width: 1200px) { ... }
+
+// Mobile Phone
+@media (max-width: 767px) {
+    #people-container {        
+        #white-wrapper{
+            padding: 20px 0px;
+            .card-container{
+                padding: 20px 0px;
+                .card{
+                    border: 1px !important;
+                    border-radius: 10px !important;
+                    overflow: hidden;
+                }
+            }
+        }            
+    }
 }

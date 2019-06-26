@@ -1,43 +1,48 @@
-#carousel{
+#carousel {
     position: relative;
-    .carousel-indicators{
+
+    .carousel-indicators {
         position: absolute;
         right: -80% !important;
-        bottom: 15% !important;       
+        bottom: 15% !important;
         margin: 0;
-        li{
+
+        li {
             border-radius: 50%;
             height: 10px;
             width: 10px;
-        }        
+        }
     }
 
-   .carousel-inner{       
-       .carousel-item{
-           position: relative;
-           img{
-            z-index: 100;
-           }
-           .slide-text{
-               position: absolute;
-               z-index: 1000;
-               top:10%;
-               right:15%;
-               h1{
-                   color: $white;
-               }               
-               p{
-                   img{
-                    border: solid 2px $white;
-                    border-radius: 50%;
-                    padding: 30px;
-                   }
-                   span{
-                       margin-left: 15px;
-                       color: $white;
-                   }
-               }            
-           }
-       }
-   }
+    .carousel-inner {
+        .carousel-item {
+            position: relative;
+
+            img {
+                z-index: 10;
+            }
+
+            .slide-text {
+                position: absolute;
+                z-index: 10;
+                top: 10%;
+                right: 15%;
+
+                h1 {
+                    color: $white;
+                }
+
+                a {
+                    p {
+                        img {                           
+                        }
+                        span {
+                            margin-left: 15px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -13,7 +13,7 @@
                 <h1>Work Hard <br>
                     Work Smart <br>
                     Enjoy Life.</h1>
-                    <p><img src="Assests/icons/Play Arrow.png" alt=""><span>Watch video</span></p>
+                    <a href=""><p><img src="Assests/icons/Play Arrow.png" alt=""><span>Watch video</span></p></a>
             </div>
         </div>
         <div class="carousel-item">
