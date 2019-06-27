@@ -41,4 +41,28 @@
 // // @media (min-width: 1200px) { ... }
 
 // Mobile Phone
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    #sponsors{       
+        padding: 3rem 0px 2rem 0px;
+        .row{
+            p{
+            }
+            ul{
+                li{
+                    img{
+                        height: 50px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                a{
+                    color: $white;
+                }
+            }
+        }
+        #chaplain-logo{
+            transform: translateX(-6%);
+        }
+    }
+}
