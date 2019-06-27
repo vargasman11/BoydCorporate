@@ -198,6 +198,17 @@
             height: 40px;
             transform: translateX(-20px); } }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  #carousel .carousel-inner .carousel-item {
+    position: relative; }
+    #carousel .carousel-inner .carousel-item img {
+      height: 350px; }
+    #carousel .carousel-inner .carousel-item .slide-text {
+      top: 15%;
+      right: 5%; }
+      #carousel .carousel-inner .carousel-item .slide-text a p img {
+        height: 60px; } }
+
 #people-container {
   background-image: url("../Assests/backgrounds/paint-swash-bg.png");
   background-size: cover;
@@ -270,6 +281,99 @@
       margin-top: -5px; }
     #people-container #white-wrapper .card-container .card .card-body a p img {
       margin-left: 10px; } }
+
+#employment {
+  background-image: url("../Assests/backgrounds/top-wood.png");
+  background-size: cover;
+  padding: 5em 0px 3.5em 0px;
+  margin-top: -40px;
+  border-bottom: 5px solid #ffffff; }
+  #employment h3 {
+    color: #ffffff; }
+  #employment a {
+    display: block;
+    background-color: #c30300;
+    width: 40%;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; }
+  #employment a:hover {
+    background-color: #c73835;
+    text-decoration: none; }
+
+@media (max-width: 767px) {
+  #employment a {
+    display: block;
+    background-color: #c30300;
+    width: 70%;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; }
+  #employment a:hover {
+    background-color: #c73835;
+    text-decoration: none; } }
+
+#info {
+  background: #233e99;
+  background: -moz-linear-gradient(90deg, #233e99 0%, #005fcd 37%, #0080ff 100%);
+  background: -webkit-linear-gradient(90deg, #233e99 0%, #005fcd 37%, #0080ff 100%);
+  background: linear-gradient(90deg, #233e99 0%, #005fcd 37%, #0080ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#233e99", endColorstr="#0080ff", GradientType=1);
+  color: #ffffff;
+  padding: 60px 90px;
+  border-bottom: 5px solid #ffffff; }
+  #info h4 {
+    font-size: 1.2rem;
+    font-weight: 400; }
+  #info p {
+    font-size: 12px;
+    text-align: justify; }
+
+@media (max-width: 767px) {
+  #info {
+    padding: 30px; }
+    #info h4 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 15px; }
+    #info p {
+      font-size: 16px;
+      text-align: left; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #info {
+    padding: 30px; }
+    #info h4 {
+      font-size: 1.5rem;
+      padding-bottom: 15px; }
+    #info p {
+      font-size: 14px;
+      text-align: left; } }
+
+#sponsors {
+  background-image: url("../Assests/backgrounds/bottom-wood.png");
+  background-size: cover;
+  border-bottom: 5px solid #ffffff;
+  padding: 6rem 0px 4rem 0px; }
+  #sponsors .row ul li img {
+    height: 80px; }
+  #sponsors .row p {
+    margin-top: 20px;
+    color: #ffffff; }
+    #sponsors .row p a {
+      color: #ffffff; }
+  #sponsors #chaplain-logo {
+    height: 220px;
+    margin-left: -50px; }
+
+html, body {
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
 
 body {
   background-color: #d9ddd9;

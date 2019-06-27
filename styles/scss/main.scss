@@ -2,7 +2,15 @@
 @import 'menu';
 @import 'carousel';
 @import 'people';
+@import 'employment';
+@import 'info';
+@import 'sponsors';
 
+html, body {
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: rgb(217, 221, 217);
     position: relative;
