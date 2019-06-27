@@ -7,12 +7,14 @@
     z-index: 100;
     position: relative;
     width: 100%;
+
     .card {
         width: 18rem;
         background-size: cover;
         height: 350px;
         border: 0px !important;
-        border-radius: 0px !important;        
+        border-radius: 0px !important;
+
         .card-body {
             position: absolute;
             bottom: 0;
@@ -21,17 +23,32 @@
             height: 40%;
             display: flex;
             flex-direction: column;
-            p {
-                color: $white;
-                font-size: 1.75em;
-                margin-top: -15px;
-                text-align: center;
-            }
+            padding: 0 !important;
+            z-index: 1;
             a {
-                color: $white;
-                text-align: center;
-                img {
-                    margin-left: 10px;
+                height: 100%;                
+                padding: 1.25rem;
+                z-index: 100;
+                h4 {
+                    color: $white;
+                    font-size: 1.75em;
+                    margin-top: -15px;
+                    text-align: center;
+                }
+                p {
+                    color: $white;
+                    text-align: center;
+
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            a:hover{
+                text-decoration: none;
+                transform: scale(1.1);
+                h4{
+                   
                 }
             }
         }
@@ -40,9 +57,11 @@
     #left-card {
         background-image: url("../Assests/people/lady-left.png");
     }
+
     #middle-card {
         background-image: url("../Assests/people/man-middle.png");
     }
+
     #right-card {
         background-image: url("../Assests/people/man-right.png");
     }
@@ -63,17 +82,55 @@
 
 // Mobile Phone
 @media (max-width: 767px) {
-    #people-container {        
-        #white-wrapper{
+    #people-container {
+        #white-wrapper {
             padding: 20px 0px;
-            .card-container{
+
+            .card-container {
                 padding: 20px 0px;
-                .card{
+
+                .card {
                     border: 1px !important;
                     border-radius: 10px !important;
                     overflow: hidden;
                 }
             }
-        }            
+        }
     }
+}
+
+
+// Tablets
+@media (min-width: 768px) and (max-width: 992px) {
+    #people-container {
+        #white-wrapper {
+            .card-container {
+                .card {
+                    width: 13rem;
+                    border: 1px !important;
+                    border-radius: 10px !important;
+                    overflow: hidden;
+                    background-position: center;
+
+                    .card-body {
+                        a{
+                            h4 {
+                                color: $white;
+                                font-size: 1.2em;
+                                margin-top: -5px;
+                            }
+    
+                            p {
+                                img {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+
+    // end tablets    
 }

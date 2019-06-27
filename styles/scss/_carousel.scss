@@ -46,3 +46,57 @@
         }
     }
 }
+
+
+// Modal
+.modal{
+    // width: 560px;
+}
+
+//     // Media Queries
+//     // Small devices (landscape phones, 576px and up)
+// // @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// // @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// // @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// // @media (min-width: 1200px) { ... }
+
+
+ // Mobile
+ @media (max-width: 576px) {
+    #carousel {
+        height: 275px;    
+        .carousel-indicators {     
+            bottom: 5% !important;     
+        }
+    
+        .carousel-inner {
+            height: 100%;
+            .carousel-item {
+                height: 100%;
+                img {
+                    height: 100%;
+                }
+    
+                .slide-text {        
+                    right:0;  
+                    top: 25%;                             
+                    h1 {
+                        font-size: 1.3em; 
+                    }    
+                    a {
+                        p {
+                            height: 40px;
+                            transform: translateX(-20px);                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }

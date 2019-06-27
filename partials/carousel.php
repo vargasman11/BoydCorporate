@@ -13,7 +13,10 @@
                 <h1>Work Hard <br>
                     Work Smart <br>
                     Enjoy Life.</h1>
-                    <a href=""><p><img src="Assests/icons/Play Arrow.png" alt=""><span>Watch video</span></p></a>
+                    <!-- Button trigger modal -->
+                    <a href="btn btn-primary" data-toggle="modal" data-target="#videoModal">
+                        <p><img src="Assests/icons/Play Arrow.png" alt=""><span>Watch video</span></p>
+                    </a>
             </div>
         </div>
         <div class="carousel-item">
@@ -23,4 +26,21 @@
             <img src="Assests/headers/header-3.png" alt="" class="d-block w-100" id="slide3">
         </div>
     </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <iframe src="https://www.youtube.com/embed/sdq7s2gI8Zs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>      
+    </div>
+  </div>
 </div>
